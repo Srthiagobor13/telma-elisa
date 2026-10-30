@@ -89,6 +89,56 @@
     reveals.forEach((el) => io.observe(el));
   }
 
+  /* ---------- Contadores animados ---------- */
+  const counters = document.querySelectorAll('.count');
+  const formatCount = (value, decimals) =>
+    value.toFixed(decimals).replace('.', ',');
+
+  const runCounter = (el) => {
+    const target = parseFloat(el.dataset.count || '0');
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const set = (value) => {
+      el.textContent = prefix + formatCount(value, decimals) + suffix;
+    };
+
+    if (reduceMotion || !target) {
+      set(target);
+      return;
+    }
+
+    const duration = 1100;
+    let start = 0;
+    const step = (now) => {
+      if (!start) start = now;
+      const progress = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      set(target * eased);
+      if (progress < 1) requestAnimationFrame(step);
+      else set(target);
+    };
+    requestAnimationFrame(step);
+  };
+
+  if (counters.length) {
+    if (!('IntersectionObserver' in window)) {
+      counters.forEach(runCounter);
+    } else {
+      const countObserver = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            runCounter(entry.target);
+            obs.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.4 }
+      );
+      counters.forEach((el) => countObserver.observe(el));
+    }
+  }
+
   /* ---------- Voltar ao topo ---------- */
   if (toTop) {
     toTop.addEventListener('click', () => {

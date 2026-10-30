@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/img/hero-telma.webp" fetchpriority="high">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
   <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
@@ -77,6 +77,32 @@
       <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.7"/>
       <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
     </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m4.5 12.6 4.9 4.9L19.5 7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24">
+      <path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24">
+      <rect x="4.5" y="10.5" width="15" height="10" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="12" cy="15.4" r="1.25" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-video" viewBox="0 0 24 24">
+      <rect x="2.8" y="6" width="12.4" height="12" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="m15.6 10.6 4.2-2.5a.6.6 0 0 1 .9.5v6.8a.6.6 0 0 1-.9.5l-4.2-2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24">
+      <circle cx="12" cy="9.4" r="5.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <path d="m8.5 14.1-1.3 6.1 4.8-2.4 4.8 2.4-1.3-6.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <path d="M4 5.6A2.6 2.6 0 0 1 6.6 3H19v15H6.6A2.6 2.6 0 0 0 4 20.6V5.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M4 20.6A2.6 2.6 0 0 1 6.6 18H19v3H6.6A2.6 2.6 0 0 1 4 20.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
   </svg>
 
   <!-- ================= HEADER ================= -->
@@ -123,8 +149,8 @@
           </p>
 
           <h1 class="hero__title">
-            Relações mais justas,
-            <em>sem você se anular</em>
+            <span class="hero__line"><span>Relações mais justas,</span></span>
+            <span class="hero__line"><span><em>sem você se anular</em></span></span>
           </h1>
 
           <p class="hero__lead">
@@ -142,16 +168,22 @@
             </a>
           </div>
 
+          <a class="hero__offer" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20marcar%20a%20primeira%20conversa%20de%2015%20minutos." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>
+            <span>Primeira conversa de 15 min, sem custo</span>
+            <svg class="hero__offer-arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+
           <ul class="hero__proof">
             <li>
               <span class="hero__proof-top">
-                <strong>5,0</strong>
+                <strong><span class="count" data-count="5" data-decimals="1">5,0</span></strong>
                 <span class="stars" role="img" aria-label="5 de 5 estrelas"><svg width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><svg width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><svg width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><svg width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg><svg width="13" height="13" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg></span>
               </span>
-              <span class="hero__proof-label">45 avaliações no Google</span>
+              <span class="hero__proof-label"><span class="count" data-count="45">45</span> avaliações no Google</span>
             </li>
             <li>
-              <span class="hero__proof-top"><strong>+100</strong></span>
+              <span class="hero__proof-top"><strong><span class="count" data-count="100" data-prefix="+">+100</span></strong></span>
               <span class="hero__proof-label">avaliações no Doctoralia</span>
             </li>
             <li>
@@ -173,6 +205,30 @@
         </div>
       </div>
     </section>
+
+    <!-- ================= SELOS DE CONFIANÇA ================= -->
+    <div class="trust" aria-label="Compromissos do atendimento">
+      <div class="container">
+        <ul class="trust__list">
+          <li class="trust__item">
+            <svg class="trust__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-lock"></use></svg>
+            <span><strong>Sigilo garantido</strong>O que é dito fica entre nós.</span>
+          </li>
+          <li class="trust__item">
+            <svg class="trust__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-book"></use></svg>
+            <span><strong>TCC com base científica</strong>Protocolos com evidência.</span>
+          </li>
+          <li class="trust__item">
+            <svg class="trust__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-video"></use></svg>
+            <span><strong>Online regulamentado</strong>Resolução CFP 011/2018.</span>
+          </li>
+          <li class="trust__item">
+            <svg class="trust__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-badge"></use></svg>
+            <span><strong>CRP ativo</strong>04/70625 · Juiz de Fora.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- ================= FAIXA ================= -->
     <div class="strip" aria-hidden="true">
@@ -220,6 +276,52 @@
         <p class="signs__note reveal">
           Se algo disso soou familiar, a terapia pode ser o primeiro passo para se reencontrar —
           no seu ritmo, com sigilo e sem julgamento.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FAZ SENTIDO PARA VOCÊ? ================= -->
+    <section class="section section--white" id="faz-sentido">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Antes de começar</p>
+          <h2 class="section__title">Terapia não é para todo mundo — e está tudo bem</h2>
+          <p class="section__lead">
+            Transparência também é cuidado. Veja com honestidade se este é o seu momento.
+          </p>
+        </header>
+
+        <div class="fit">
+          <div class="fit__col fit__col--yes reveal">
+            <h3 class="fit__title">
+              <span class="fit__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-check"></use></svg></span>
+              Pode fazer sentido se…
+            </h3>
+            <ul class="fit__list">
+              <li>Você quer entender os padrões que se repetem, não apenas aliviar o sintoma.</li>
+              <li>Você consegue reservar cerca de 50 minutos por semana para cuidar de si.</li>
+              <li>Você busca um espaço de fala e escuta, não respostas prontas.</li>
+              <li>Você está disposta a olhar para a própria história com honestidade.</li>
+            </ul>
+          </div>
+
+          <div class="fit__col fit__col--no reveal">
+            <h3 class="fit__title">
+              <span class="fit__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-minus"></use></svg></span>
+              Talvez não seja o momento se…
+            </h3>
+            <ul class="fit__list">
+              <li>Você procura um diagnóstico rápido ou um conselho pontual.</li>
+              <li>Você espera que o terapeuta diga exatamente o que fazer.</li>
+              <li>Você não pode se comprometer com encontros regulares agora.</li>
+              <li>Você está em crise e precisa de atendimento imediato.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="fit__note reveal">
+          Em situações de crise, ligue <strong>188</strong> (CVV, 24h) ou procure o CAPS mais próximo.
+          Se não for o meu caso, posso indicar outros caminhos.
         </p>
       </div>
     </section>
@@ -285,6 +387,10 @@
             </span>
             <h3>Relacionamentos e infidelidade</h3>
             <p>Quando a confiança quebra, ou quando a relação já não cabe em você do jeito que está.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20relacionamentos." target="_blank" rel="noopener">
+              Falar sobre relacionamentos
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
@@ -292,6 +398,10 @@
             </span>
             <h3>Ansiedade</h3>
             <p>Preocupação constante, corpo em alerta, dificuldade de descansar mesmo fora do trabalho.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20ansiedade." target="_blank" rel="noopener">
+              Falar sobre ansiedade
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
@@ -299,6 +409,10 @@
             </span>
             <h3>Autoestima</h3>
             <p>Reconhecer o próprio valor sem depender da aprovação de quem está por perto.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20autoestima." target="_blank" rel="noopener">
+              Falar sobre autoestima
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
@@ -306,6 +420,10 @@
             </span>
             <h3>Comunicação assertiva</h3>
             <p>Falar o que precisa ser dito, com clareza e respeito — sem agressividade e sem se calar.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20comunica%C3%A7%C3%A3o%20assertiva." target="_blank" rel="noopener">
+              Falar sobre comunicação
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
@@ -313,6 +431,10 @@
             </span>
             <h3>Dependências digitais</h3>
             <p>Telas, jogos online e bets: quando o uso deixa de ser escolha e passa a comandar o dia.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20depend%C3%AAncias%20digitais." target="_blank" rel="noopener">
+              Falar sobre dependências digitais
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
@@ -320,6 +442,10 @@
             </span>
             <h3>Terapia de casais</h3>
             <p>Um espaço seguro para o diálogo a dois, reconstrução de confiança e acordos mais justos.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20terapia%20de%20casais." target="_blank" rel="noopener">
+              Falar sobre terapia de casais
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
           </li>
         </ul>
 
@@ -376,6 +502,62 @@
               <span class="credentials__value">Comunicação Assertiva e Não Violenta · ACT</span>
             </li>
           </ul>
+
+          <div class="signature">
+            <span class="signature__name">Telma Elisa</span>
+            <span class="signature__role">Psicóloga · CRP 04/70625</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="numbers reveal">
+          <li>
+            <span class="numbers__value"><span class="count" data-count="29">29</span></span>
+            <span class="numbers__label">anos de escuta — do jornalismo à clínica</span>
+          </li>
+          <li>
+            <span class="numbers__value"><span class="count" data-count="113">113</span></span>
+            <span class="numbers__label">avaliações no Doctoralia</span>
+          </li>
+          <li>
+            <span class="numbers__value"><span class="count" data-count="5" data-decimals="1">5,0</span></span>
+            <span class="numbers__label">nota no Google · 45 avaliações</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= O ESPAÇO ================= -->
+    <section class="section" id="espaco">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">O espaço</p>
+          <h2 class="section__title">Um lugar reservado para você</h2>
+          <p class="section__lead">
+            Sala 506 do Edifício Milênio Center, no Centro de Juiz de Fora.
+            Atendimento por hora marcada, presencial ou por videochamada.
+          </p>
+        </header>
+
+        <div class="gallery">
+          <figure class="gallery__tile gallery__tile--main reveal">
+            <img src="assets/img/consultorio-livros.webp" alt="Livros de psicologia e comunicação apoiados no colo, no consultório" width="390" height="430" loading="lazy">
+            <figcaption>Estudo e supervisão contínuos</figcaption>
+          </figure>
+
+          <figure class="gallery__tile gallery__tile--detail reveal">
+            <img src="assets/img/consultorio-sala.webp" alt="Detalhe do consultório: poltrona, cortina e luz natural" width="345" height="610" loading="lazy">
+            <figcaption>Sala de atendimento</figcaption>
+          </figure>
+
+          <div class="gallery__quote reveal">
+            <p class="gallery__quote-text">“Um espaço para falar sem medo de ser julgada — e para se ouvir com calma.”</p>
+            <div class="gallery__quote-foot">
+              <p class="gallery__quote-meta">Telma Elisa · CRP 04/70625</p>
+              <p class="gallery__quote-address">Sala 506 · Ed. Milênio Center<br>Av. Barão do Rio Branco, 2872 · Centro</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -484,7 +666,7 @@
           <li class="start__item reveal">
             <span class="start__num">01</span>
             <h3>Fale comigo</h3>
-            <p>Uma mensagem no WhatsApp já basta. Respondo em até 24 horas para combinarmos o melhor horário.</p>
+            <p>Uma mensagem no WhatsApp já basta. Podemos começar com uma conversa de 15 minutos, sem custo, para tirar dúvidas.</p>
           </li>
           <li class="start__item reveal">
             <span class="start__num">02</span>
@@ -497,6 +679,21 @@
             <p>Sessões semanais, no presencial ou online, com objetivos definidos junto com você.</p>
           </li>
         </ol>
+
+        <div class="offer reveal">
+          <div class="offer__copy">
+            <p class="offer__title">Primeira conversa de 15 minutos, sem custo</p>
+            <p class="offer__text">
+              Um contato rápido pelo WhatsApp ou por vídeo para você contar o que busca,
+              entender como o trabalho funciona e sentir se faz sentido. Não é uma sessão
+              de terapia e não gera compromisso.
+            </p>
+          </div>
+          <a class="btn btn--primary" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20marcar%20a%20primeira%20conversa%20de%2015%20minutos." target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"></use></svg>
+            Marcar conversa
+          </a>
+        </div>
 
         <p class="start__note reveal">
           A psicoterapia online é regulamentada no Brasil pela Resolução CFP nº 011/2018 e tem a
@@ -529,6 +726,10 @@
           <details class="faq__item reveal">
             <summary>Como faço para agendar?</summary>
             <p>Basta enviar uma mensagem no WhatsApp ou escolher um horário disponível na Doctoralia. Respondo em até 24 horas.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Como funciona a primeira conversa de 15 minutos?</summary>
+            <p>É um contato rápido, sem custo, por WhatsApp ou vídeo. Você conta o que busca, tira dúvidas sobre o processo e conhece o jeito de trabalhar. Não é uma sessão de terapia e não gera compromisso.</p>
           </details>
           <details class="faq__item reveal">
             <summary>O que preciso para a primeira sessão online?</summary>
@@ -621,7 +822,7 @@
             <a class="btn btn--outline-light btn--lg" href="mailto:telmaelisa@gmail.com">Enviar e-mail</a>
           </div>
 
-          <p class="contact__reply">Respondo em até 24 horas.</p>
+          <p class="contact__reply">Respondo em até 24 horas · Primeira conversa de 15 min, sem custo.</p>
         </div>
 
         <div class="contact__card reveal">
@@ -727,6 +928,18 @@
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
   </button>
 
-  <script src="assets/js/main.js?v=1" defer></script>
+  <div class="cta-bar">
+    <div class="cta-bar__text">
+      <strong>Primeira conversa</strong>
+      <span>15 min, sem custo</span>
+    </div>
+    <a class="btn btn--primary" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20marcar%20a%20primeira%20conversa%20de%2015%20minutos." target="_blank" rel="noopener">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"></use></svg>
+      Agendar
+    </a>
+  </div>
+
+  <script src="assets/js/main.js?v=2" defer></script>
 </body>
 </html>
+
