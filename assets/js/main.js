@@ -139,6 +139,35 @@
     }
   }
 
+  /* ---------- Carrossel de depoimentos ---------- */
+  const quotesTrack = document.getElementById('quotesTrack');
+  if (quotesTrack && !reduceMotion) {
+    const originals = [...quotesTrack.children];
+    originals.forEach((node) => {
+      const clone = node.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      quotesTrack.appendChild(clone);
+    });
+  }
+
+  /* ---------- Abas "Na mídia" ---------- */
+  const mediaTabs = document.querySelectorAll('.media-tabs__btn');
+  if (mediaTabs.length) {
+    mediaTabs.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        mediaTabs.forEach((b) => {
+          const active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-selected', String(active));
+        });
+        document.querySelectorAll('.media-grid').forEach((panel) => {
+          panel.hidden = panel.dataset.panel !== target;
+        });
+      });
+    });
+  }
+
   /* ---------- Voltar ao topo ---------- */
   if (toTop) {
     toTop.addEventListener('click', () => {

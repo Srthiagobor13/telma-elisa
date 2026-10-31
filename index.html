@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/img/hero-telma.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
   <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
@@ -95,6 +95,9 @@
       <rect x="2.8" y="6" width="12.4" height="12" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
       <path d="m15.6 10.6 4.2-2.5a.6.6 0 0 1 .9.5v6.8a.6.6 0 0 1-.9.5l-4.2-2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <path d="M9 7.2v9.6a.8.8 0 0 0 1.22.68l7.6-4.8a.8.8 0 0 0 0-1.36l-7.6-4.8A.8.8 0 0 0 9 7.2Z" fill="currentColor"/>
+    </symbol>
     <symbol id="i-badge" viewBox="0 0 24 24">
       <circle cx="12" cy="9.4" r="5.6" fill="none" stroke="currentColor" stroke-width="1.6"/>
       <path d="m8.5 14.1-1.3 6.1 4.8-2.4 4.8 2.4-1.3-6.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -120,7 +123,7 @@
         <ul class="nav__list">
           <li><a class="nav__link" href="#terapia">A terapia</a></li>
           <li><a class="nav__link" href="#especialidades">Especialidades</a></li>
-          <li><a class="nav__link" href="#sobre">Sobre</a></li>
+          <li><a class="nav__link" href="#sobre">Biografia</a></li>
           <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
           <li><a class="nav__link" href="#contato">Contato</a></li>
         </ul>
@@ -383,6 +386,17 @@
         <ul class="cards">
           <li class="card reveal">
             <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5l3 2M8 4.2l-2 2M18 6.2l-2-2"/></svg>
+            </span>
+            <h3>Terapia para TDAH</h3>
+            <p>Manejo da desatenção, impulsividade e organização do dia a dia, com estratégias práticas.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20TDAH." target="_blank" rel="noopener">
+              Falar sobre TDAH
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3s-7.4-4.5-9.1-8.7A5.4 5.4 0 0 1 12 6.1a5.4 5.4 0 0 1 9.1 5.5c-1.7 4.2-9.1 8.7-9.1 8.7Z"/></svg>
             </span>
             <h3>Relacionamentos e infidelidade</h3>
@@ -447,10 +461,71 @@
               <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
             </a>
           </li>
+          <li class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.4"/><path d="M12 12.4c-4 0-6.5 2.6-6.5 5.4M15 7.5l5.2-3M15 11l5.8 1M14 14.5l4.4 3.3"/></svg>
+            </span>
+            <h3>Fobia social</h3>
+            <p>Reduza a ansiedade em interações e desenvolva segurança para se expressar sem se travar.</p>
+            <a class="card__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20fobia%20social." target="_blank" rel="noopener">
+              Falar sobre fobia social
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </li>
         </ul>
 
         <div class="cards__cta reveal">
           <a class="btn btn--primary" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia." target="_blank" rel="noopener">Falar sobre o meu caso</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INDIVIDUAL / CASAIS ================= -->
+    <section class="section section--sand" id="modalidades">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow">Como atendo</p>
+          <h2 class="section__title">Individual ou para casais</h2>
+          <p class="section__lead">Você pode iniciar seu processo com atendimento online ou presencial, de forma simples, segura e no seu ritmo.</p>
+        </header>
+
+        <div class="modes">
+          <div class="mode reveal">
+            <h3 class="mode__title">Individual</h3>
+            <p class="mode__lead">Para quem deseja compreender melhor o que sente, lidar com a ansiedade e fortalecer a autoestima.</p>
+            <ul class="mode__list">
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Espaço de escuta e autoconhecimento</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Ambiente seguro e acolhedor</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Desenvolvimento pessoal e emocional</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Sigilo e ética em todas as sessões</li>
+            </ul>
+            <a class="mode__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20individual." target="_blank" rel="noopener">
+              Saiba mais sobre a terapia individual
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+
+          <div class="mode reveal">
+            <h3 class="mode__title">Para casais</h3>
+            <p class="mode__lead">Fortaleça seu relacionamento com um espaço seguro para o diálogo a dois.</p>
+            <ul class="mode__list">
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Espaço seguro para o diálogo a dois</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Melhora da comunicação e da empatia</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Reconstrução da confiança e da parceria</li>
+              <li><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-check"></use></svg>Acompanhamento profissional e confidencial</li>
+            </ul>
+            <a class="mode__link" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20de%20casais." target="_blank" rel="noopener">
+              Saiba mais sobre a terapia de casais
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="cards__cta reveal">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/5532984111185?text=Ol%C3%A1%2C%20Telma%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"></use></svg>
+            Agende sua sessão
+          </a>
         </div>
       </div>
     </section>
@@ -464,13 +539,15 @@
         </div>
 
         <div class="about__copy reveal">
-          <p class="eyebrow">Sobre mim</p>
+          <p class="eyebrow">Biografia</p>
           <h2 class="section__title">Uma escuta construída em duas carreiras</h2>
 
           <p class="about__text">
-            Sou psicóloga clínica e também jornalista formada pela UFJF, onde atuei por 29 anos.
-            Essa trajetória me deu algo que nenhum livro entrega: a compreensão de que toda
-            história tem contexto, e que a palavra dita com cuidado transforma.
+            Nasci em Juiz de Fora, mas por conta da profissão do meu pai, morei em outros estados,
+            até que aos 18 anos voltei para a terrinha para prestar meu primeiro vestibular.
+            Cursei Jornalismo pela Universidade Federal de Juiz de Fora (UFJF), formação que me deu
+            uma compreensão ampla sobre as relações humanas, a escuta ativa e o poder da palavra
+            como ferramenta de transformação. Atuei por 29 anos em vários campos do jornalismo.
           </p>
           <p class="about__text">
             Depois de criar meus filhos, fiz da Psicologia meu segundo caminho — e nela encontrei
@@ -568,35 +645,219 @@
         <header class="section__head reveal">
           <p class="eyebrow">Na mídia</p>
           <h2 class="section__title">Psicologia também fora do consultório</h2>
-          <p class="section__lead">Participações e colunas sobre saúde mental, comportamento e relações.</p>
+          <p class="section__lead">Veja minhas participações em TV, rádio, podcast e a coluna que assino no Acessa.</p>
         </header>
 
-        <ul class="press">
-          <li class="press__item reveal">
-            <span class="press__outlet">Acessa.com</span>
-            <p class="press__topic">Coluna sobre saúde mental e relações</p>
-          </li>
-          <li class="press__item reveal">
-            <span class="press__outlet">MG1 · TV Globo</span>
-            <p class="press__topic">Relógio biológico e produtividade</p>
-          </li>
-          <li class="press__item reveal">
-            <span class="press__outlet">MG1 · Zona da Mata</span>
-            <p class="press__topic">Autoestima das mulheres pretas</p>
-          </li>
-          <li class="press__item reveal">
-            <span class="press__outlet">MGTV · Zona da Mata</span>
-            <p class="press__topic">Transição de carreira</p>
-          </li>
-          <li class="press__item reveal">
-            <span class="press__outlet">Rádio Play Hits</span>
-            <p class="press__topic">Entrevista sobre psicologia</p>
-          </li>
-          <li class="press__item reveal">
-            <span class="press__outlet">Podcast NahReal</span>
-            <p class="press__topic">Autoestima e bem-estar</p>
-          </li>
-        </ul>
+        <div class="media-tabs reveal">
+          <div class="media-tabs__nav" role="tablist" aria-label="Filtrar participações na mídia">
+            <button class="media-tabs__btn is-active" type="button" role="tab" aria-selected="true" aria-controls="midia-painel-video" id="midia-aba-video" data-tab="video">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-video"></use></svg>
+              Vídeo &amp; áudio <span class="media-tabs__count">6</span>
+            </button>
+            <button class="media-tabs__btn" type="button" role="tab" aria-selected="false" aria-controls="midia-painel-acessa" id="midia-aba-acessa" data-tab="acessa">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#i-book"></use></svg>
+              Coluna no Acessa <span class="media-tabs__count">6</span>
+            </button>
+          </div>
+
+          <ul class="media-grid" id="midia-painel-video" role="tabpanel" aria-labelledby="midia-aba-video" data-panel="video">
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=xpvGX5L8inc" target="_blank" rel="noopener" aria-label="Assistir: Autoestima das mulheres pretas">
+                <img src="assets/img/midia/preview4.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">MG1 · Zona da Mata</span>
+                <p class="media-card__topic">Autoestima das mulheres pretas</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=xpvGX5L8inc" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=DH7MwQ4PBzc" target="_blank" rel="noopener" aria-label="Assistir: Autoestima e bem-estar">
+                <img src="assets/img/midia/preview3.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Podcast NahReal</span>
+                <p class="media-card__topic">Autoestima e bem-estar</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=DH7MwQ4PBzc" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=kMkU_M329jc" target="_blank" rel="noopener" aria-label="Assistir: Relógio biológico e produtividade">
+                <img src="assets/img/midia/preview2.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">MG1 · TV Globo</span>
+                <p class="media-card__topic">Relógio biológico e produtividade</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=kMkU_M329jc" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=Bi0gB-H2HIQ" target="_blank" rel="noopener" aria-label="Assistir: Vision Board e metas">
+                <img src="assets/img/midia/preview5.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com</span>
+                <p class="media-card__topic">Vision Board e metas</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=Bi0gB-H2HIQ" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=GJ-dXola9Yg" target="_blank" rel="noopener" aria-label="Assistir: Transição de carreira">
+                <img src="assets/img/midia/preview1.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">MGTV 2ª Edição · Zona da Mata</span>
+                <p class="media-card__topic">Transição de carreira</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=GJ-dXola9Yg" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.youtube.com/watch?v=GbgR2_OSZfg" target="_blank" rel="noopener" aria-label="Assistir: Entrevista sobre psicologia">
+                <img src="assets/img/midia/preview6.webp" alt="" width="480" height="270" loading="lazy">
+                <span class="media-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-play"></use></svg></span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Rádio Play Hits</span>
+                <p class="media-card__topic">Entrevista sobre psicologia</p>
+                <a class="media-card__link" href="https://www.youtube.com/watch?v=GbgR2_OSZfg" target="_blank" rel="noopener">
+                  Assistir
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="media-grid" id="midia-painel-acessa" role="tabpanel" aria-labelledby="midia-aba-acessa" data-panel="acessa" hidden>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.acessa.com/colunistas/telma-elisa/2025/03/234458-quiet-quitting-voce-esta-se-afastando-em-silencio-do-seu-relacionamento.html" target="_blank" rel="noopener" aria-label="Ler coluna: Quiet Quitting">
+                <img src="assets/img/midia/postagem1.webp" alt="" width="480" height="270" loading="lazy">
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 13 Mar 2025</span>
+                <p class="media-card__topic">Quiet Quitting: você está se afastando em silêncio do seu relacionamento?</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2025/03/234458-quiet-quitting-voce-esta-se-afastando-em-silencio-do-seu-relacionamento.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb media-card__thumb--fallback" href="https://www.acessa.com/colunistas/telma-elisa/2025/05/238179-bets-e-saude-mental-a-dor-que-os-influenciadores-nao-mostram.html" target="_blank" rel="noopener" aria-label="Ler coluna: Bets e saúde mental">
+                <span class="media-card__mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-book"></use></svg>
+                </span>
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 15 Mai 2025</span>
+                <p class="media-card__topic">Bets e saúde mental: a dor que os influenciadores não mostram</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2025/05/238179-bets-e-saude-mental-a-dor-que-os-influenciadores-nao-mostram.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.acessa.com/colunistas/telma-elisa/2025/01/231711-jogos-online-voce-perde-bem-mais-do-que-so-dinheiro.html" target="_blank" rel="noopener" aria-label="Ler coluna: Jogos online">
+                <img src="assets/img/midia/postagem3.webp" alt="" width="480" height="270" loading="lazy">
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 23 Jan 2025</span>
+                <p class="media-card__topic">Jogos online: você perde bem mais do que só dinheiro</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2025/01/231711-jogos-online-voce-perde-bem-mais-do-que-so-dinheiro.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.acessa.com/colunistas/telma-elisa/2024/11/227774-como-suas-palavras-tem-influenciado-sua-autoestima.html" target="_blank" rel="noopener" aria-label="Ler coluna: Como suas palavras têm influenciado na sua autoestima">
+                <img src="assets/img/midia/postagem4.webp" alt="" width="480" height="270" loading="lazy">
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 14 Nov 2024</span>
+                <p class="media-card__topic">Como suas palavras têm influenciado na sua autoestima</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2024/11/227774-como-suas-palavras-tem-influenciado-sua-autoestima.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.acessa.com/colunistas/telma-elisa/2025/05/237763-maternidade-nao-tem-fim-e-nem-manual.html" target="_blank" rel="noopener" aria-label="Ler coluna: Maternidade não tem fim e nem manual">
+                <img src="assets/img/midia/postagem5.webp" alt="" width="480" height="270" loading="lazy">
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 08 Mai 2025</span>
+                <p class="media-card__topic">Maternidade não tem fim, e nem manual</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2025/05/237763-maternidade-nao-tem-fim-e-nem-manual.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="media-card">
+              <a class="media-card__thumb" href="https://www.acessa.com/colunistas/telma-elisa/2025/02/232555-a-opiniao-dos-outros-pode-ser-um-detalhe-mas-nunca-uma-necessidade-na-sua-vida.html" target="_blank" rel="noopener" aria-label="Ler coluna: A opinião dos outros">
+                <img src="assets/img/midia/postagem6.webp" alt="" width="480" height="270" loading="lazy">
+              </a>
+              <div class="media-card__body">
+                <span class="media-card__outlet">Acessa.com · 06 Fev 2025</span>
+                <p class="media-card__topic">A opinião dos outros pode ser um detalhe, mas nunca uma necessidade na sua vida</p>
+                <a class="media-card__link" href="https://www.acessa.com/colunistas/telma-elisa/2025/02/232555-a-opiniao-dos-outros-pode-ser-um-detalhe-mas-nunca-uma-necessidade-na-sua-vida.html" target="_blank" rel="noopener">
+                  Confira na íntegra
+                  <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTAGRAM ================= -->
+    <section class="section section--plum section--tight" id="instagram">
+      <div class="container ig-cta reveal">
+        <span class="ig-cta__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26"><use href="#i-ig"></use></svg>
+        </span>
+        <h2 class="ig-cta__title">Me siga no Instagram</h2>
+        <p class="ig-cta__text">
+          Conteúdo sobre relacionamentos, ansiedade e autoestima publicado toda semana,
+          para continuar a conversa fora do consultório.
+        </p>
+        <a class="btn btn--light" href="https://www.instagram.com/telmaelisa.psi/" target="_blank" rel="noopener">
+          <svg class="ico ico--ig" width="18" height="18" aria-hidden="true"><use href="#i-ig"></use></svg>
+          @telmaelisa.psi
+        </a>
+
+        <div class="ig-feed">
+          <iframe
+            src="https://cdn.lightwidget.com/widgets/1819dbcac5c2519296c09fe493a6d662.html?v=2"
+            scrolling="no"
+            allowtransparency="true"
+            title="Últimas publicações de @telmaelisa.psi no Instagram"
+            loading="lazy"
+            class="ig-feed__widget"></iframe>
+        </div>
       </div>
     </section>
 
@@ -617,31 +878,33 @@
           </a>
         </header>
 
-        <div class="quotes">
-          <figure class="quote reveal">
-            <blockquote>“Atenciosa, muito carinhosa, cuidadosa para falar. Envia mensagem perguntando se estou bem diante de alguma situação comentada. Enfim, adoro.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">F</span> Flávia</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>“Gosto da Telma porque ela não apenas te escuta, mas também fala e te ajuda sabiamente. Estou adorando as consultas.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">F</span> Fernanda</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>“Já tinha passado por vários profissionais sem me identificar com nenhum. Encontrei nela acolhimento e profissionalismo. Saio mais leve das sessões.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">J</span> Jordana</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>“Profissional atualizada, extremamente competente. Percebo um resultado contínuo no tratamento.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">S</span> Sara</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>“Desde o primeiro contato me senti extremamente confortável e acolhida. Sua abordagem é empática e calorosa. Recomendo a todos.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">A</span> Aline</figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>“A Telma te acolhe desde o primeiro contato. Faz você ver as situações de uma forma diferente, enfrentando-as com leveza.”</blockquote>
-            <figcaption><span class="quote__avatar" aria-hidden="true">K</span> Karine Figueiredo</figcaption>
-          </figure>
+        <div class="quotes-viewport reveal">
+          <div class="quotes-track" id="quotesTrack">
+            <figure class="quote">
+              <blockquote>“Atenciosa, muito carinhosa, cuidadosa para falar. Envia mensagem perguntando se estou bem diante de alguma situação comentada. Enfim, adoro.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">F</span> Flávia</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Gosto da Telma porque ela não apenas te escuta, mas também fala e te ajuda sabiamente. Estou adorando as consultas.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">F</span> Fernanda</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Já tinha passado por vários profissionais sem me identificar com nenhum. Encontrei nela acolhimento e profissionalismo. Saio mais leve das sessões.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">J</span> Jordana</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Profissional atualizada, extremamente competente. Percebo um resultado contínuo no tratamento.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">S</span> Sara</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“Desde o primeiro contato me senti extremamente confortável e acolhida. Sua abordagem é empática e calorosa. Recomendo a todos.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">A</span> Aline</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>“A Telma te acolhe desde o primeiro contato. Faz você ver as situações de uma forma diferente, enfrentando-as com leveza.”</blockquote>
+              <figcaption><span class="quote__avatar" aria-hidden="true">K</span> Karine Figueiredo</figcaption>
+            </figure>
+          </div>
         </div>
 
         <div class="quotes__footer reveal">
@@ -939,7 +1202,8 @@
     </a>
   </div>
 
-  <script src="assets/js/main.js?v=2" defer></script>
+  <script src="assets/js/main.js?v=3" defer></script>
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" defer></script>
 </body>
 </html>
 
